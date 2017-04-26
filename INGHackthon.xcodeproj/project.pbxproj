@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		DF52524B1EB13B6C009DDAB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52524A1EB13B6C009DDAB1 /* AppDelegate.swift */; };
-		DF52524D1EB13B6C009DDAB1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52524C1EB13B6C009DDAB1 /* FirstViewController.swift */; };
-		DF52524F1EB13B6C009DDAB1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52524E1EB13B6C009DDAB1 /* SecondViewController.swift */; };
 		DF5252521EB13B6C009DDAB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5252501EB13B6C009DDAB1 /* Main.storyboard */; };
 		DF5252541EB13B6C009DDAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5252531EB13B6C009DDAB1 /* Assets.xcassets */; };
 		DF5252571EB13B6C009DDAB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5252551EB13B6C009DDAB1 /* LaunchScreen.storyboard */; };
 		DF5252621EB13B6C009DDAB1 /* INGHackthonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5252611EB13B6C009DDAB1 /* INGHackthonTests.swift */; };
 		DF52526D1EB13B6C009DDAB1 /* INGHackthonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52526C1EB13B6C009DDAB1 /* INGHackthonUITests.swift */; };
+		DF52527B1EB1424C009DDAB1 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52527A1EB1424C009DDAB1 /* HomeTableViewController.swift */; };
+		DF52527D1EB14266009DDAB1 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52527C1EB14266009DDAB1 /* SearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 /* Begin PBXFileReference section */
 		DF5252471EB13B6C009DDAB1 /* INGHackthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INGHackthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF52524A1EB13B6C009DDAB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF52524C1EB13B6C009DDAB1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DF52524E1EB13B6C009DDAB1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		DF5252511EB13B6C009DDAB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF5252531EB13B6C009DDAB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5252561EB13B6C009DDAB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		DF5252681EB13B6C009DDAB1 /* INGHackthonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INGHackthonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF52526C1EB13B6C009DDAB1 /* INGHackthonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INGHackthonUITests.swift; sourceTree = "<group>"; };
 		DF52526E1EB13B6C009DDAB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF52527A1EB1424C009DDAB1 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		DF52527C1EB14266009DDAB1 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				DF52524A1EB13B6C009DDAB1 /* AppDelegate.swift */,
-				DF52524C1EB13B6C009DDAB1 /* FirstViewController.swift */,
-				DF52524E1EB13B6C009DDAB1 /* SecondViewController.swift */,
 				DF5252501EB13B6C009DDAB1 /* Main.storyboard */,
 				DF5252531EB13B6C009DDAB1 /* Assets.xcassets */,
 				DF5252551EB13B6C009DDAB1 /* LaunchScreen.storyboard */,
 				DF5252581EB13B6C009DDAB1 /* Info.plist */,
+				DF52527A1EB1424C009DDAB1 /* HomeTableViewController.swift */,
+				DF52527C1EB14266009DDAB1 /* SearchTableViewController.swift */,
 			);
 			path = INGHackthon;
 			sourceTree = "<group>";
@@ -265,9 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF52524F1EB13B6C009DDAB1 /* SecondViewController.swift in Sources */,
+				DF52527B1EB1424C009DDAB1 /* HomeTableViewController.swift in Sources */,
+				DF52527D1EB14266009DDAB1 /* SearchTableViewController.swift in Sources */,
 				DF52524B1EB13B6C009DDAB1 /* AppDelegate.swift in Sources */,
-				DF52524D1EB13B6C009DDAB1 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
