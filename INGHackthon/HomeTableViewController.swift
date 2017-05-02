@@ -9,15 +9,25 @@
 import UIKit
 
 class HomeTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableView.estimatedRowHeight = 55.0
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        
+        let image = UIImage(named: "ingLogo")
+        let imageView = UIImageView(image: image)
+        self.navigationItem.titleView = imageView
+        //248 243 237
+        self.tableView.backgroundColor = UIColor.init(red: 248.0/255.0, green: 243.0/255.0, blue: 237.0/255.0, alpha: 1.0)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,24 +38,61 @@ class HomeTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return (section == 0) ? 1 : 3
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        
+        let cellIdentifier = (indexPath.section == 0) ? "headerCell" : "infoCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        if let infoCell = cell as? HomeInfoTableViewCell{
+            infoCell.lblTitle.text = "Some Text"
+        }else if let headerCell = cell as? HomeCollectionViewTableViewCell{
+            
+        }
+        
         return cell
     }
-    */
+    
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
+        let sectionHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 30.0))
+        sectionHeaderView.backgroundColor = UIColor.clear
+        let label = UILabel(frame: sectionHeaderView.frame)
+        label.text = "Some Header Text"
+        label.textColor = UIColor(red: 0.0, green: 57.0/155.0, blue: 118.0/255.0, alpha: 1.0)
+        label.font = UIFont.init(name: "Helvetica-Neue", size: 16.0)
+        label.sizeToFit()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        sectionHeaderView.addSubview(label)
+        
+        let verticalConstraint = NSLayoutConstraint(item: label, attribute: .centerY, relatedBy: .equal, toItem: sectionHeaderView, attribute: .centerY, multiplier: 1.0, constant: 0.0)
+        sectionHeaderView.addConstraint(verticalConstraint)
+        
+        let leftConstraint = NSLayoutConstraint(item: label, attribute: .leading, relatedBy: .equal, toItem: sectionHeaderView, attribute: .leading, multiplier: 1.0, constant: 14)
+        sectionHeaderView.addConstraint(leftConstraint)
+        
+        sectionHeaderView.setNeedsUpdateConstraints()
+        sectionHeaderView.setNeedsLayout()
+        
+        return sectionHeaderView
+
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30.0
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
 
     /*
     // Override to support conditional editing of the table view.

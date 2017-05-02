@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DF1156A51EB3858300063C4B /* Screen Shot 2017-04-28 at 17.11.09.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1156A41EB3858300063C4B /* Screen Shot 2017-04-28 at 17.11.09.png */; };
+		DF3239041EB91721006C12CC /* HomeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3239031EB91721006C12CC /* HomeInfoTableViewCell.swift */; };
+		DF3239061EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3239051EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift */; };
 		DF52524B1EB13B6C009DDAB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52524A1EB13B6C009DDAB1 /* AppDelegate.swift */; };
 		DF5252521EB13B6C009DDAB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5252501EB13B6C009DDAB1 /* Main.storyboard */; };
 		DF5252541EB13B6C009DDAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5252531EB13B6C009DDAB1 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		DF1156A41EB3858300063C4B /* Screen Shot 2017-04-28 at 17.11.09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-04-28 at 17.11.09.png"; sourceTree = "<group>"; };
+		DF3239031EB91721006C12CC /* HomeInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfoTableViewCell.swift; sourceTree = "<group>"; };
+		DF3239051EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		DF5252471EB13B6C009DDAB1 /* INGHackthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INGHackthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF52524A1EB13B6C009DDAB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF5252511EB13B6C009DDAB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				DF5252581EB13B6C009DDAB1 /* Info.plist */,
 				DF52527A1EB1424C009DDAB1 /* HomeTableViewController.swift */,
 				DF52527C1EB14266009DDAB1 /* SearchTableViewController.swift */,
+				DF3239031EB91721006C12CC /* HomeInfoTableViewCell.swift */,
+				DF3239051EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift */,
 			);
 			path = INGHackthon;
 			sourceTree = "<group>";
@@ -279,6 +285,8 @@
 			files = (
 				DF52527B1EB1424C009DDAB1 /* HomeTableViewController.swift in Sources */,
 				DF52527D1EB14266009DDAB1 /* SearchTableViewController.swift in Sources */,
+				DF3239041EB91721006C12CC /* HomeInfoTableViewCell.swift in Sources */,
+				DF3239061EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift in Sources */,
 				DF52524B1EB13B6C009DDAB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
