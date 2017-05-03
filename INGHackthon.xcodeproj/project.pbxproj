@@ -10,6 +10,12 @@
 		DF1156A51EB3858300063C4B /* Screen Shot 2017-04-28 at 17.11.09.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1156A41EB3858300063C4B /* Screen Shot 2017-04-28 at 17.11.09.png */; };
 		DF3239041EB91721006C12CC /* HomeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3239031EB91721006C12CC /* HomeInfoTableViewCell.swift */; };
 		DF3239061EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3239051EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift */; };
+		DF3239191EBA5D6A006C12CC /* Solomon-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF3239131EBA5D6A006C12CC /* Solomon-Black.otf */; };
+		DF32391A1EBA5D6A006C12CC /* Solomon-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF3239141EBA5D6A006C12CC /* Solomon-Bold.otf */; };
+		DF32391B1EBA5D6A006C12CC /* Solomon-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF3239151EBA5D6A006C12CC /* Solomon-Book.otf */; };
+		DF32391C1EBA5D6A006C12CC /* Solomon-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF3239161EBA5D6A006C12CC /* Solomon-Light.otf */; };
+		DF32391D1EBA5D6A006C12CC /* Solomon-Normal 2.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF3239171EBA5D6A006C12CC /* Solomon-Normal 2.otf */; };
+		DF32391E1EBA5D6A006C12CC /* Solomon-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF3239181EBA5D6A006C12CC /* Solomon-Thin.otf */; };
 		DF52524B1EB13B6C009DDAB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52524A1EB13B6C009DDAB1 /* AppDelegate.swift */; };
 		DF5252521EB13B6C009DDAB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5252501EB13B6C009DDAB1 /* Main.storyboard */; };
 		DF5252541EB13B6C009DDAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5252531EB13B6C009DDAB1 /* Assets.xcassets */; };
@@ -41,6 +47,12 @@
 		DF1156A41EB3858300063C4B /* Screen Shot 2017-04-28 at 17.11.09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-04-28 at 17.11.09.png"; sourceTree = "<group>"; };
 		DF3239031EB91721006C12CC /* HomeInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfoTableViewCell.swift; sourceTree = "<group>"; };
 		DF3239051EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		DF3239131EBA5D6A006C12CC /* Solomon-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solomon-Black.otf"; sourceTree = "<group>"; };
+		DF3239141EBA5D6A006C12CC /* Solomon-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solomon-Bold.otf"; sourceTree = "<group>"; };
+		DF3239151EBA5D6A006C12CC /* Solomon-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solomon-Book.otf"; sourceTree = "<group>"; };
+		DF3239161EBA5D6A006C12CC /* Solomon-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solomon-Light.otf"; sourceTree = "<group>"; };
+		DF3239171EBA5D6A006C12CC /* Solomon-Normal 2.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solomon-Normal 2.otf"; sourceTree = "<group>"; };
+		DF3239181EBA5D6A006C12CC /* Solomon-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Solomon-Thin.otf"; sourceTree = "<group>"; };
 		DF5252471EB13B6C009DDAB1 /* INGHackthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INGHackthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF52524A1EB13B6C009DDAB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF5252511EB13B6C009DDAB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +102,19 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		DF3239121EBA5D57006C12CC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DF3239131EBA5D6A006C12CC /* Solomon-Black.otf */,
+				DF3239141EBA5D6A006C12CC /* Solomon-Bold.otf */,
+				DF3239151EBA5D6A006C12CC /* Solomon-Book.otf */,
+				DF3239161EBA5D6A006C12CC /* Solomon-Light.otf */,
+				DF3239171EBA5D6A006C12CC /* Solomon-Normal 2.otf */,
+				DF3239181EBA5D6A006C12CC /* Solomon-Thin.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		DF52523E1EB13B6C009DDAB1 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +138,7 @@
 		DF5252491EB13B6C009DDAB1 /* INGHackthon */ = {
 			isa = PBXGroup;
 			children = (
+				DF3239121EBA5D57006C12CC /* Fonts */,
 				DF1156A31EB3852400063C4B /* images */,
 				DF52524A1EB13B6C009DDAB1 /* AppDelegate.swift */,
 				DF5252501EB13B6C009DDAB1 /* Main.storyboard */,
@@ -256,8 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5252571EB13B6C009DDAB1 /* LaunchScreen.storyboard in Resources */,
+				DF3239191EBA5D6A006C12CC /* Solomon-Black.otf in Resources */,
+				DF32391A1EBA5D6A006C12CC /* Solomon-Bold.otf in Resources */,
+				DF32391B1EBA5D6A006C12CC /* Solomon-Book.otf in Resources */,
+				DF32391D1EBA5D6A006C12CC /* Solomon-Normal 2.otf in Resources */,
+				DF32391C1EBA5D6A006C12CC /* Solomon-Light.otf in Resources */,
 				DF1156A51EB3858300063C4B /* Screen Shot 2017-04-28 at 17.11.09.png in Resources */,
 				DF5252541EB13B6C009DDAB1 /* Assets.xcassets in Resources */,
+				DF32391E1EBA5D6A006C12CC /* Solomon-Thin.otf in Resources */,
 				DF5252521EB13B6C009DDAB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
