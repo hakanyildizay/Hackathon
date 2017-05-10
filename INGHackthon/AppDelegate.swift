@@ -8,6 +8,8 @@
 
 import UIKit
 
+var ROOT_URL : String = "http://firstwebservis.azurewebsites.net"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
