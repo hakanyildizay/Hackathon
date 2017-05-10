@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class HomeTableViewController: UITableViewController {
     
@@ -26,6 +28,29 @@ class HomeTableViewController: UITableViewController {
         self.navigationItem.titleView = imageView
         //248 243 237
         self.tableView.backgroundColor = UIColor.init(red: 248.0/255.0, green: 243.0/255.0, blue: 237.0/255.0, alpha: 1.0)
+        
+        
+
+        Alamofire.request(ROOT_URL+"/api/Customer").responseJSON { (response : DataResponse<Any>) in
+            
+            print(response.response ?? "no response")
+            print(response.result)
+            
+            if let value = response.result.value{
+                
+                if let arrayValue = value as? Array<Any>,
+                    let dictionary = arrayValue[0] as? Dictionary<String,Any>
+                {
+                    let cityName = dictionary["city"] as? String
+                    print("CityName \(cityName)")
+                    
+                }else if let dictValue = value as? Dictionary<String, Any>{
+                    print("JSON \(dictValue))")
+                }
+                
+            }
+            
+        }
         
         
     }
