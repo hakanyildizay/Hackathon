@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90CC9CCA1EC218A100AFBC73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC9CC91EC218A100AFBC73 /* LoginViewController.swift */; };
 		DF1156A51EB3858300063C4B /* Screen Shot 2017-04-28 at 17.11.09.png in Resources */ = {isa = PBXBuildFile; fileRef = DF1156A41EB3858300063C4B /* Screen Shot 2017-04-28 at 17.11.09.png */; };
 		DF3239041EB91721006C12CC /* HomeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3239031EB91721006C12CC /* HomeInfoTableViewCell.swift */; };
 		DF3239061EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3239051EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		90CC9CC91EC218A100AFBC73 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DF1156A41EB3858300063C4B /* Screen Shot 2017-04-28 at 17.11.09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-04-28 at 17.11.09.png"; sourceTree = "<group>"; };
 		DF3239031EB91721006C12CC /* HomeInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInfoTableViewCell.swift; sourceTree = "<group>"; };
 		DF3239051EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewTableViewCell.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				DF5252581EB13B6C009DDAB1 /* Info.plist */,
 				DF52527A1EB1424C009DDAB1 /* HomeTableViewController.swift */,
 				DF52527C1EB14266009DDAB1 /* SearchTableViewController.swift */,
+				90CC9CC91EC218A100AFBC73 /* LoginViewController.swift */,
 				DF3239031EB91721006C12CC /* HomeInfoTableViewCell.swift */,
 				DF3239051EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift */,
 			);
@@ -239,7 +242,7 @@
 				TargetAttributes = {
 					DF5252461EB13B6C009DDAB1 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 2GKG6WK3GH;
+						DevelopmentTeam = 3CS9JNP4A8;
 						ProvisioningStyle = Automatic;
 					};
 					DF52525C1EB13B6C009DDAB1 = {
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF52527B1EB1424C009DDAB1 /* HomeTableViewController.swift in Sources */,
+				90CC9CCA1EC218A100AFBC73 /* LoginViewController.swift in Sources */,
 				DF52527D1EB14266009DDAB1 /* SearchTableViewController.swift in Sources */,
 				DF3239041EB91721006C12CC /* HomeInfoTableViewCell.swift in Sources */,
 				DF3239061EB9175B006C12CC /* HomeCollectionViewTableViewCell.swift in Sources */,
@@ -471,7 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2GKG6WK3GH;
+				DEVELOPMENT_TEAM = 3CS9JNP4A8;
 				INFOPLIST_FILE = INGHackthon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ingbank.INGHackthon;
@@ -484,7 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2GKG6WK3GH;
+				DEVELOPMENT_TEAM = 3CS9JNP4A8;
 				INFOPLIST_FILE = INGHackthon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ingbank.INGHackthon;

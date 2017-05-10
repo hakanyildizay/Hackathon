@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,7 +38,52 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794" y="1897"/>
+            <point key="canvasLocation" x="-884" y="1673"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="p9f-72-PM5">
+            <objects>
+                <viewController id="q4H-OV-XYm" customClass="LoginViewController" customModule="INGHackthon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C0N-La-Tv4"/>
+                        <viewControllerLayoutGuide type="bottom" id="7wz-Ku-BmW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YJW-Yb-56U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jXP-4C-hMa">
+                                <rect key="frame" x="164" y="308.5" width="46" height="50.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dny-1V-PTn">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="q4H-OV-XYm" eventType="touchUpInside" id="fdr-Zq-cdG"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyM-fH-YS0">
+                                        <rect key="frame" x="0.0" y="30" width="46" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jXP-4C-hMa" firstAttribute="centerY" secondItem="YJW-Yb-56U" secondAttribute="centerY" id="jPH-aG-I0C"/>
+                            <constraint firstItem="jXP-4C-hMa" firstAttribute="centerX" secondItem="YJW-Yb-56U" secondAttribute="centerX" id="lWt-U9-93e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblHelloKitty" destination="QyM-fH-YS0" id="RJ4-N5-53m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1f9-Xf-KLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-866.39999999999998" y="2612.7436281859073"/>
         </scene>
         <!--HOME-->
         <scene sceneID="CEZ-QB-qI1">
@@ -388,14 +433,14 @@ Coontexted in primary steps the consequences… </string>
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WFb-xl-Dql" id="XiV-UM-Euf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0IV-V3-Rgf">
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbW-Qn-ZjF">
-                                                            <rect key="frame" x="10" y="15.5" width="70" height="14"/>
+                                                            <rect key="frame" x="10" y="15" width="70" height="14"/>
                                                             <fontDescription key="fontDescription" name="Solomon-Bold" family="Solomon" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -447,7 +492,7 @@ Coontexted in primary steps the consequences… </string>
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPG-Bg-Cpo">
-                                                            <rect key="frame" x="10" y="15.5" width="70" height="14"/>
+                                                            <rect key="frame" x="10" y="15" width="70" height="14"/>
                                                             <fontDescription key="fontDescription" name="Solomon-Bold" family="Solomon" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -499,7 +544,7 @@ Coontexted in primary steps the consequences… </string>
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVF-2b-Reh">
-                                                            <rect key="frame" x="10" y="15.5" width="70" height="14"/>
+                                                            <rect key="frame" x="10" y="15" width="70" height="14"/>
                                                             <fontDescription key="fontDescription" name="Solomon-Bold" family="Solomon" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -551,7 +596,7 @@ Coontexted in primary steps the consequences… </string>
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iam-qy-ghL">
-                                                            <rect key="frame" x="10" y="15.5" width="70" height="14"/>
+                                                            <rect key="frame" x="10" y="15" width="70" height="14"/>
                                                             <fontDescription key="fontDescription" name="Solomon-Bold" family="Solomon" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -603,7 +648,7 @@ Coontexted in primary steps the consequences… </string>
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtO-TS-LTh">
-                                                            <rect key="frame" x="10" y="15.5" width="70" height="14"/>
+                                                            <rect key="frame" x="10" y="15" width="70" height="14"/>
                                                             <fontDescription key="fontDescription" name="Solomon-Bold" family="Solomon" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -655,7 +700,7 @@ Coontexted in primary steps the consequences… </string>
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP1-f9-PCO">
-                                                            <rect key="frame" x="10" y="15.5" width="70" height="14"/>
+                                                            <rect key="frame" x="10" y="15" width="70" height="14"/>
                                                             <fontDescription key="fontDescription" name="Solomon-Bold" family="Solomon" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -707,7 +752,7 @@ Coontexted in primary steps the consequences… </string>
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEn-Go-Wel">
-                                                            <rect key="frame" x="10" y="15.5" width="70" height="14"/>
+                                                            <rect key="frame" x="10" y="15" width="70" height="14"/>
                                                             <fontDescription key="fontDescription" name="Solomon-Bold" family="Solomon" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -759,7 +804,7 @@ Coontexted in primary steps the consequences… </string>
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Em2-W0-hGd">
-                                                            <rect key="frame" x="10" y="15.5" width="70" height="14"/>
+                                                            <rect key="frame" x="10" y="15" width="70" height="14"/>
                                                             <fontDescription key="fontDescription" name="Solomon-Bold" family="Solomon" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -811,7 +856,7 @@ Coontexted in primary steps the consequences… </string>
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electronics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO1-er-KmW">
-                                                            <rect key="frame" x="10" y="15.5" width="70" height="14"/>
+                                                            <rect key="frame" x="10" y="15" width="70" height="14"/>
                                                             <fontDescription key="fontDescription" name="Solomon-Bold" family="Solomon" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
